@@ -3,216 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin's Personal Space</title>
+    <title>Font Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Crimson+Pro:wght@600;700&family=Lora:wght@400;600&family=Montserrat:wght@600;700&family=Nunito:wght@400;600;700&family=Merriweather:wght@400;700&family=Work+Sans:wght@600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        nav {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #764ba2;
-        }
-        
-        .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
-            padding: 40px;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .preview {
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-        
-        header {
-            text-align: center;
-            padding-bottom: 30px;
-            border-bottom: 3px solid #667eea;
-            margin-bottom: 40px;
-        }
-        
-        h1 {
-            font-size: 3em;
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
-        .tagline {
-            color: #666;
-            font-size: 1.2em;
-            font-style: italic;
-        }
-        
-        .section {
-            margin-bottom: 50px;
-        }
-        
-        h2 {
-            color: #764ba2;
-            margin-bottom: 20px;
-            font-size: 2em;
-            border-left: 5px solid #667eea;
-            padding-left: 15px;
-        }
-        
-        .card {
-            background: #f9f9f9;
-            padding: 25px;
+            padding: 30px;
             margin: 20px 0;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
-        .card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        }
-        
-        .card h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
-        .intro {
-            text-align: center;
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #f0f4ff;
-            border-radius: 10px;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #eee;
-            color: #888;
+        .preview h2 {
+            background: #667eea;
+            color: white;
+            padding: 10px;
+            margin: -30px -30px 20px -30px;
+            border-radius: 10px 10px 0 0;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#recipes">Recipes</a></li>
-            <li><a href="#workouts">Workouts</a></li>
-            <li><a href="#mindfulness">Mindfulness</a></li>
-        </ul>
-    </nav>
+    <h1>Font Preview for Yasmin's Space</h1>
+    
+    <div class="preview" style="font-family: 'Inter', sans-serif;">
+        <h2>Option 1: Inter + Crimson Pro</h2>
+        <p style="font-family: 'Crimson Pro', serif; font-size: 2em; font-weight: 700;">Yasmin's Space</p>
+        <p style="font-size: 1.1em;">Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center.</p>
+        <p><strong style="font-family: 'Crimson Pro', serif; font-size: 1.5em;">Nourish • Move • Reflect</strong></p>
+    </div>
 
-    <div class="container">
-        <header id="home">
-            <h1>Yasmin's Space</h1>
-            <p class="tagline">Nourish • Move • Reflect</p>
-        </header>
-        
-        <div class="intro">
-            <p>Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center. This is my creative corner for all things wellness, curiosity, technology and joy.</p>
-        </div>
+    <div class="preview" style="font-family: 'Lora', serif;">
+        <h2>Option 2: Lora + Montserrat</h2>
+        <p style="font-family: 'Montserrat', sans-serif; font-size: 2em; font-weight: 700;">Yasmin's Space</p>
+        <p style="font-size: 1.1em;">Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center.</p>
+        <p><strong style="font-family: 'Montserrat', sans-serif; font-size: 1.5em;">Nourish • Move • Reflect</strong></p>
+    </div>
 
-        <section class="section" id="recipes">
-            <h2>🍳 Recipes</h2>
-            
-            <div class="card">
-                <h3>Golden Turmeric Latte</h3>
-                <p>A warming, anti-inflammatory drink perfect for cozy mornings. Turmeric, ginger, cinnamon, and a touch of honey in warm milk.</p>
-                <p><em>Coming soon: full recipe and photos!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Mediterranean Quinoa Bowl</h3>
-                <p>Fresh, colorful, and packed with protein. Quinoa, chickpeas, cucumber, tomatoes, feta, and lemon-tahini dressing.</p>
-                <p><em>Coming soon: full recipe and photos!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Energy Bites</h3>
-                <p>No-bake snacks made with dates, nuts, and dark chocolate. Perfect pre-workout fuel!</p>
-                <p><em>Coming soon: full recipe and photos!</em></p>
-            </div>
-        </section>
+    <div class="preview" style="font-family: 'Nunito', sans-serif;">
+        <h2>Option 3: Nunito</h2>
+        <p style="font-size: 2em; font-weight: 700;">Yasmin's Space</p>
+        <p style="font-size: 1.1em;">Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center.</p>
+        <p><strong style="font-size: 1.5em;">Nourish • Move • Reflect</strong></p>
+    </div>
 
-        <section class="section" id="workouts">
-            <h2>💪 Workouts</h2>
-            
-            <div class="card">
-                <h3>Morning Flow Yoga (20 min)</h3>
-                <p>A gentle sequence to wake up the body. Sun salutations, hip openers, and gentle twists to start your day energized.</p>
-                <p><em>Coming soon: video and detailed sequence!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Core Strength Series</h3>
-                <p>15-minute targeted core workout. Planks, boat pose variations, and oblique work for functional strength.</p>
-                <p><em>Coming soon: workout guide!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Evening Wind-Down Stretch</h3>
-                <p>Restorative poses to release tension. Forward folds, gentle spinal twists, and supported backbends.</p>
-                <p><em>Coming soon: video and guide!</em></p>
-            </div>
-        </section>
+    <div class="preview" style="font-family: 'Merriweather', serif;">
+        <h2>Option 4: Merriweather + Work Sans</h2>
+        <p style="font-family: 'Work Sans', sans-serif; font-size: 2em; font-weight: 700;">Yasmin's Space</p>
+        <p style="font-size: 1.1em;">Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center.</p>
+        <p><strong style="font-family: 'Work Sans', sans-serif; font-size: 1.5em;">Nourish • Move • Reflect</strong></p>
+    </div>
 
-        <section class="section" id="mindfulness">
-            <h2>🧘 Mindfulness Thoughts</h2>
-            
-            <div class="card">
-                <h3>On Being Present</h3>
-                <p>"The present moment is the only moment we truly have. Not the past we cannot change, nor the future we cannot control. Just this breath, this step, this now."</p>
-            </div>
-            
-            <div class="card">
-                <h3>Balancing Tech & Presence</h3>
-                <p>As someone in software engineering, I'm constantly thinking about how to build technology while maintaining human connection and mindfulness. Can we code with intention?</p>
-            </div>
-            
-            <div class="card">
-                <h3>The Practice of Non-Doing</h3>
-                <p>In a culture obsessed with productivity, there's profound power in simply being. Not every moment needs to be optimized, not every hour needs to produce something.</p>
-            </div>
-        </section>
-
-        <footer>
-            <p>✨ Made with intention • Updated regularly ✨</p>
-            <p><a href="https://github.com/gingeryaz" style="color: #667eea;">GitHub</a></p>
-        </footer>
+    <div class="preview" style="font-family: 'Poppins', sans-serif;">
+        <h2>Option 5: Poppins</h2>
+        <p style="font-size: 2em; font-weight: 700;">Yasmin's Space</p>
+        <p style="font-size: 1.1em;">Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center.</p>
+        <p><strong style="font-size: 1.5em;">Nourish • Move • Reflect</strong></p>
     </div>
 </body>
 </html>
