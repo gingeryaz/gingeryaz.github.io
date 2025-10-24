@@ -1,1 +1,0 @@
-# gingeryaz.github.io
