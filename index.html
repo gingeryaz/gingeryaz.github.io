@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin - Software Engineering & Research</title>
+    <title>Yasmin's Personal Space</title>
     <style>
         * {
             margin: 0;
@@ -12,93 +12,207 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            font-family: 'Georgia', serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
         
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #764ba2;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
         header {
-            border-bottom: 2px solid #333;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            margin-bottom: 40px;
         }
         
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
+            color: #667eea;
             margin-bottom: 10px;
         }
         
-        .subtitle {
+        .tagline {
             color: #666;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        
+        .section {
+            margin-bottom: 50px;
         }
         
         h2 {
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #333;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
         }
         
-        p {
-            margin-bottom: 15px;
-        }
-        
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .contact {
-            margin-top: 30px;
-            padding: 20px;
+        .card {
             background: #f9f9f9;
-            border-radius: 5px;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .intro {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f0f4ff;
+            border-radius: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            color: #888;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#workouts">Workouts</a></li>
+            <li><a href="#mindfulness">Mindfulness</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <header>
-            <h1>Yasmin</h1>
-            <p class="subtitle">MS in Software Engineering Systems | Northeastern University</p>
+        <header id="home">
+            <h1>Yasmin's Space</h1>
+            <p class="tagline">Nourish • Move • Reflect</p>
         </header>
         
-        <section>
-            <h2>About</h2>
-            <p>Graduate student pursuing an MS in Software Engineering Systems at Northeastern University under Professor Bugrara. My research focuses on computational diplomacy and enterprise architecture.</p>
-            <p>I'm also a certified yoga instructor in Boston, bringing together technical expertise with mindfulness practices.</p>
-        </section>
-        
-        <section>
-            <h2>Research</h2>
-            <p><strong>IDEA Framework</strong> - Integrated Diplomatic Enterprise Architecture Design</p>
-            <p>Developing a framework that applies computational diplomacy concepts to enterprise architecture stakeholder communication, integrating diplomatic action primitives with established frameworks like TOGAF and Zachman.</p>
-        </section>
-        
-        <section>
-            <h2>Interests</h2>
-            <p>Software Engineering • Enterprise Architecture • Computational Diplomacy • Yoga • Wellness Technology</p>
-        </section>
-        
-        <div class="contact">
-            <h2>Connect</h2>
-            <p>GitHub: <a href="https://github.com/gingeryaz">@gingeryaz</a></p>
+        <div class="intro">
+            <p>Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center. This is my creative corner for all things wellness.</p>
         </div>
+
+        <section class="section" id="recipes">
+            <h2>🍳 Recipes</h2>
+            
+            <div class="card">
+                <h3>Golden Turmeric Latte</h3>
+                <p>A warming, anti-inflammatory drink perfect for cozy mornings. Turmeric, ginger, cinnamon, and a touch of honey in warm milk.</p>
+                <p><em>Coming soon: full recipe and photos!</em></p>
+            </div>
+            
+            <div class="card">
+                <h3>Mediterranean Quinoa Bowl</h3>
+                <p>Fresh, colorful, and packed with protein. Quinoa, chickpeas, cucumber, tomatoes, feta, and lemon-tahini dressing.</p>
+                <p><em>Coming soon: full recipe and photos!</em></p>
+            </div>
+            
+            <div class="card">
+                <h3>Energy Bites</h3>
+                <p>No-bake snacks made with dates, nuts, and dark chocolate. Perfect pre-workout fuel!</p>
+                <p><em>Coming soon: full recipe and photos!</em></p>
+            </div>
+        </section>
+
+        <section class="section" id="workouts">
+            <h2>💪 Workouts</h2>
+            
+            <div class="card">
+                <h3>Morning Flow Yoga (20 min)</h3>
+                <p>A gentle sequence to wake up the body. Sun salutations, hip openers, and gentle twists to start your day energized.</p>
+                <p><em>Coming soon: video and detailed sequence!</em></p>
+            </div>
+            
+            <div class="card">
+                <h3>Core Strength Series</h3>
+                <p>15-minute targeted core workout. Planks, boat pose variations, and oblique work for functional strength.</p>
+                <p><em>Coming soon: workout guide!</em></p>
+            </div>
+            
+            <div class="card">
+                <h3>Evening Wind-Down Stretch</h3>
+                <p>Restorative poses to release tension. Forward folds, gentle spinal twists, and supported backbends.</p>
+                <p><em>Coming soon: video and guide!</em></p>
+            </div>
+        </section>
+
+        <section class="section" id="mindfulness">
+            <h2>🧘 Mindfulness Thoughts</h2>
+            
+            <div class="card">
+                <h3>On Being Present</h3>
+                <p>"The present moment is the only moment we truly have. Not the past we cannot change, nor the future we cannot control. Just this breath, this step, this now."</p>
+            </div>
+            
+            <div class="card">
+                <h3>Balancing Tech & Presence</h3>
+                <p>As someone in software engineering, I'm constantly thinking about how to build technology while maintaining human connection and mindfulness. Can we code with intention?</p>
+            </div>
+            
+            <div class="card">
+                <h3>The Practice of Non-Doing</h3>
+                <p>In a culture obsessed with productivity, there's profound power in simply being. Not every moment needs to be optimized, not every hour needs to produce something.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>✨ Made with intention • Updated regularly ✨</p>
+            <p><a href="https://github.com/gingeryaz" style="color: #667eea;">GitHub</a></p>
+        </footer>
     </div>
 </body>
 </html>
