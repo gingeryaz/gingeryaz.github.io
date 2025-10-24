@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmin - Software Engineering & Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Yasmin</h1>
+            <p class="subtitle">MS in Software Engineering Systems | Northeastern University</p>
+        </header>
+        
+        <section>
+            <h2>About</h2>
+            <p>Graduate student pursuing an MS in Software Engineering Systems at Northeastern University under Professor Bugrara. My research focuses on computational diplomacy and enterprise architecture.</p>
+            <p>I'm also a certified yoga instructor in Boston, bringing together technical expertise with mindfulness practices.</p>
+        </section>
+        
+        <section>
+            <h2>Research</h2>
+            <p><strong>IDEA Framework</strong> - Integrated Diplomatic Enterprise Architecture Design</p>
+            <p>Developing a framework that applies computational diplomacy concepts to enterprise architecture stakeholder communication, integrating diplomatic action primitives with established frameworks like TOGAF and Zachman.</p>
+        </section>
+        
+        <section>
+            <h2>Interests</h2>
+            <p>Software Engineering • Enterprise Architecture • Computational Diplomacy • Yoga • Wellness Technology</p>
+        </section>
+        
+        <div class="contact">
+            <h2>Connect</h2>
+            <p>GitHub: <a href="https://github.com/gingeryaz">@gingeryaz</a></p>
+        </div>
+    </div>
+</body>
+</html>
