@@ -3,220 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin's Personal Space</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Crimson+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <title>Yasmin | MS Student & Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Open Sans', -apple-system, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background: #fff;
         }
-        
-        h1, h2, h3 {
-            font-family: 'Crimson Pro', Georgia, serif;
-        }
-        
-        nav {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #764ba2;
-        }
-        
+
         .container {
             max-width: 900px;
-            margin: 40px auto;
-            padding: 40px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin: 0 auto;
+            padding: 60px 20px;
         }
-        
+
         header {
-            text-align: center;
+            margin-bottom: 60px;
             padding-bottom: 30px;
-            border-bottom: 3px solid #667eea;
-            margin-bottom: 40px;
+            border-bottom: 1px solid #ddd;
         }
-        
+
         h1 {
-            font-size: 3em;
-            color: #667eea;
+            font-size: 2.8em;
+            font-weight: 700;
             margin-bottom: 10px;
+            color: #222;
         }
-        
-        .tagline {
+
+        .subtitle {
+            font-size: 1.3em;
             color: #666;
-            font-size: 1.2em;
-            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 20px;
         }
-        
-        .section {
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        section {
             margin-bottom: 50px;
         }
-        
+
         h2 {
-            color: #764ba2;
+            font-size: 1.8em;
+            font-weight: 700;
             margin-bottom: 20px;
-            font-size: 2em;
-            border-left: 5px solid #667eea;
-            padding-left: 15px;
+            color: #222;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2563eb;
         }
-        
-        .card {
-            background: #f9f9f9;
-            padding: 25px;
-            margin: 20px 0;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        }
-        
-        .card h3 {
-            color: #667eea;
+
+        h3 {
+            font-size: 1.3em;
+            font-weight: 600;
             margin-bottom: 10px;
+            color: #333;
         }
-        
-        .intro {
-            text-align: center;
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #f0f4ff;
-            border-radius: 10px;
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.7;
         }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #eee;
+
+        .research-item {
+            margin-bottom: 35px;
+        }
+
+        .research-item h3 {
+            color: #2563eb;
+        }
+
+        .date {
             color: #888;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+
+        .education-item {
+            margin-bottom: 25px;
+        }
+
+        .institution {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .degree {
+            color: #666;
+            font-size: 1em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .keywords {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+
+        .keywords strong {
+            color: #333;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 30px;
+            align-items: start;
+            margin-bottom: 40px;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .subtitle {
+                font-size: 1.1em;
+            }
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#recipes">Recipes</a></li>
-            <li><a href="#workouts">Workouts</a></li>
-            <li><a href="#mindfulness">Mindfulness</a></li>
-        </ul>
-    </nav>
-
     <div class="container">
-        <header id="home">
-            <h1>Yasmin's Space</h1>
-            <p class="tagline">Nourish • Move • Reflect</p>
+        <header>
+            <h1>Yasmin [Your Last Name]</h1>
+            <p class="subtitle">MS Student in Software Engineering Systems | Northeastern University</p>
+            <div class="links">
+                <a href="mailto:your.email@northeastern.edu">Email</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="cv.pdf" target="_blank">CV</a>
+            </div>
         </header>
-        
-        <div class="intro">
-            <p>Welcome to my personal space where I share recipes that nourish, workouts that energize, and thoughts that center. This is my creative corner for all things wellness, curiosity, technology and joy.</p>
-        </div>
 
-        <section class="section" id="recipes">
-            <h2>🍳 Recipes</h2>
-            
-            <div class="card">
-                <h3>Golden Turmeric Latte</h3>
-                <p>A warming, anti-inflammatory drink perfect for cozy mornings. Turmeric, ginger, cinnamon, and a touch of honey in warm milk.</p>
-                <p><em>Coming soon: full recipe and photos!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Mediterranean Quinoa Bowl</h3>
-                <p>Fresh, colorful, and packed with protein. Quinoa, chickpeas, cucumber, tomatoes, feta, and lemon-tahini dressing.</p>
-                <p><em>Coming soon: full recipe and photos!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Energy Bites</h3>
-                <p>No-bake snacks made with dates, nuts, and dark chocolate. Perfect pre-workout fuel!</p>
-                <p><em>Coming soon: full recipe and photos!</em></p>
+        <section id="about">
+            <h2>About</h2>
+            <div class="profile-section">
+                <div class="profile-text">
+                    <p>I am a graduate student pursuing an MS in Software Engineering Systems at Northeastern University, where I work with Professor Bugrara. My research focuses on the intersection of computational diplomacy and enterprise architecture design.</p>
+                    
+                    <p>My thesis explores how diplomatic communication principles can improve stakeholder alignment in enterprise architecture processes. I'm developing the IDEA Framework (Integrated Diplomatic Enterprise Architecture Design), which applies computational diplomacy concepts to address the communication challenges that arise in complex organizational technology decisions.</p>
+                    
+                    <p>Prior to graduate school, I worked as an R&D Project Scrum Master and have experience in both technical leadership and mindfulness practices as a certified yoga instructor.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="workouts">
-            <h2>💪 Workouts</h2>
+        <section id="research">
+            <h2>Research</h2>
             
-            <div class="card">
-                <h3>Morning Flow Yoga (20 min)</h3>
-                <p>A gentle sequence to wake up the body. Sun salutations, hip openers, and gentle twists to start your day energized.</p>
-                <p><em>Coming soon: video and detailed sequence!</em></p>
+            <div class="research-item">
+                <h3>IDEA Framework: Integrated Diplomatic Enterprise Architecture Design</h3>
+                <p class="date">Master's Thesis • 2024-2025</p>
+                <p>Developing a novel framework that integrates computational diplomacy principles with enterprise architecture stakeholder communication. The framework uses diplomatic action primitives (PROPOSE, CLARIFY, CONSTRAIN, REVISE, AGREE, ESCALATE, DEFER) to structure and improve communication patterns in enterprise architecture decision-making.</p>
+                
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Framework design integrating diplomatic theory with TOGAF and Zachman frameworks</li>
+                    <li>Evaluation methodology using Architecture Decision Records (ADRs) as test cases</li>
+                    <li>Comparative analysis against baseline models (GPT-4, Claude Sonnet)</li>
+                    <li>Implementation using transparent models (OLMo-7B) for reproducibility</li>
+                </ul>
+                
+                <p class="keywords"><strong>Methods:</strong> NLP, Task-Oriented Dialogue Systems, Enterprise Architecture, Computational Social Science</p>
             </div>
-            
-            <div class="card">
-                <h3>Core Strength Series</h3>
-                <p>15-minute targeted core workout. Planks, boat pose variations, and oblique work for functional strength.</p>
-                <p><em>Coming soon: workout guide!</em></p>
-            </div>
-            
-            <div class="card">
-                <h3>Evening Wind-Down Stretch</h3>
-                <p>Restorative poses to release tension. Forward folds, gentle spinal twists, and supported backbends.</p>
-                <p><em>Coming soon: video and guide!</em></p>
+
+            <div class="research-item">
+                <h3>Research Interests</h3>
+                <ul>
+                    <li>Computational Diplomacy & Multi-Agent Communication</li>
+                    <li>Enterprise Architecture & Organizational Decision-Making</li>
+                    <li>Transparent AI Systems & Reproducible Research</li>
+                    <li>Human-AI Collaboration in Complex Organizational Contexts</li>
+                    <li>AI Applications in Wellness & Human-Centered Technology</li>
+                </ul>
             </div>
         </section>
 
-        <section class="section" id="mindfulness">
-            <h2>🧘 Mindfulness Thoughts</h2>
+        <section id="education">
+            <h2>Education</h2>
             
-            <div class="card">
-                <h3>On Being Present</h3>
-                <p>"The present moment is the only moment we truly have. Not the past we cannot change, nor the future we cannot control. Just this breath, this step, this now."</p>
+            <div class="education-item">
+                <p class="institution">Northeastern University</p>
+                <p class="degree">MS in Software Engineering Systems</p>
+                <p class="date">Expected 2025</p>
+                <p>Advisor: Professor Bugrara</p>
+                <p>Thesis: IDEA Framework - Applying Computational Diplomacy to Enterprise Architecture</p>
             </div>
+
+            <div class="education-item">
+                <p class="institution">[Your Undergraduate Institution]</p>
+                <p class="degree">[Your Undergraduate Degree]</p>
+                <p class="date">[Year]</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
             
-            <div class="card">
-                <h3>Balancing Tech & Presence</h3>
-                <p>As someone in software engineering, I'm constantly thinking about how to build technology while maintaining human connection and mindfulness. Can we code with intention?</p>
+            <div class="education-item">
+                <p class="institution">General Dynamics Mission Systems</p>
+                <p class="degree">Pittsfield, MA</p>
+                <p class="date">Current</p>
+                <p>Software engineering work in defense technology systems.</p>
             </div>
-            
-            <div class="card">
-                <h3>The Practice of Non-Doing</h3>
-                <p>In a culture obsessed with productivity, there's profound power in simply being. Not every moment needs to be optimized, not every hour needs to produce something.</p>
+
+            <div class="education-item">
+                <p class="institution">R&D Project Scrum Master</p>
+                <p class="date">Previous Role</p>
+                <p>Led cross-functional teams in research and development projects using Agile methodologies.</p>
             </div>
+
+            <div class="education-item">
+                <p class="institution">Certified Yoga Instructor</p>
+                <p>Teaching yoga classes in Boston, integrating mindfulness practices with technical work.</p>
+            </div>
+        </section>
+
+        <section id="technical">
+            <h2>Technical Skills & Tools</h2>
+            <p><strong>Programming:</strong> Java, Python, JavaScript</p>
+            <p><strong>AI/ML:</strong> Spring AI, Ollama, Vector Databases (Qdrant), Knowledge Graphs (Neo4j)</p>
+            <p><strong>NLP Concepts:</strong> CBOW, Skip-Gram, Byte Pair Encoding, Transformer Architectures</p>
+            <p><strong>Frameworks:</strong> Spring Boot, GitHub Pages (Jekyll)</p>
+            <p><strong>Databases:</strong> Relational, Vector, OLTP, OLAP systems</p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p><em>Thesis manuscript in progress. To be submitted 2025.</em></p>
         </section>
 
         <footer>
-            <p>✨ Made with intention • Updated regularly ✨</p>
-            <p><a href="https://github.com/gingeryaz" style="color: #667eea;">GitHub</a></p>
+            <p>© 2025 Yasmin [Your Last Name] • Last updated: October 2025</p>
         </footer>
     </div>
 </body>
