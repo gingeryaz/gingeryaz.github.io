@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Your Name</title>
+    <title>Bites of the Universe</title>
     <style>
         * {
             margin: 0;
@@ -19,9 +19,41 @@
             padding: 40px 20px;
         }
 
+        nav {
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        nav a.active {
+            border-bottom: 1px solid #333;
+        }
+
         .container {
             max-width: 700px;
             margin: 0 auto;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
         }
 
         h1 {
@@ -29,6 +61,25 @@
             font-weight: 300;
             margin-bottom: 2rem;
             letter-spacing: 0.05em;
+        }
+
+        .bio-section {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio-image {
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .bio-text {
+            flex: 1;
         }
 
         p {
@@ -102,22 +153,45 @@
             p, .social-link {
                 font-size: 1rem;
             }
+
+            .bio-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .bio-image {
+                margin-bottom: 1rem;
+            }
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#" class="nav-link active" data-tab="about">about</a>
+        <a href="#" class="nav-link" data-tab="services">services</a>
+    </nav>
+
     <div class="container">
+        <div id="about" class="tab-content active">
         <h1>about</h1>
         
-        <p>
-            What inspires my teaching is helping others recognize the force of life within, appreciate their body, and utilize their breath to be present and move through life gracefully. I learned yoga and meditation as a way to move my body in ways that bring clarity to my thoughts. I like to emphasize that one must take care of their self in order to better the collective. I grew up in Kuwait with a Turkish mother and Kuwaiti father, and I live between Pittsfield and Boston, MA. Tech-curious, health-conscious, bringing love and joy to myself and my surroundings.
-        </p>
+        <div class="bio-section">
+            <img src="profile.jpg" alt="Yasmin" class="bio-image">
+            <div class="bio-text">
+                <p>
+                    What inspires my teaching is helping others recognize the force of life within, appreciate their body, and utilize their breath to be present and move through life gracefully. I learned yoga and meditation as a way to move my body in ways that bring clarity to my thoughts. I like to emphasize that one must take care of their self in order to better the collective. I grew up in Kuwait with a Turkish mother and Kuwaiti father, and a Siamese cat called Ginger. Now I have a Serbian cat called Vera and a Syrian dwarf hamster called Butter. I live between Pittsfield and Boston, MA. Tech-curious, health-conscious, bringing love and joy to myself and my surroundings.
+                </p>
+            </div>
+        </div>
 
         <div class="social-links">
             <p style="margin-bottom: 0.5rem;">Let's connect!</p>
             <a href="https://www.instagram.com/Bitesoftheuniverse/" class="social-link" target="_blank">@Bitesoftheuniverse</a>
             <span style="margin: 0 0.5rem;">•</span>
             <a href="https://www.tiktok.com/@gingeryaz" class="social-link" target="_blank">@gingeryaz</a>
+            <span style="margin: 0 0.5rem;">•</span>
+            <a href="mailto:bitesoftheuniverse@gmail.com" class="social-link">bitesoftheuniverse@gmail.com</a>
         </div>
 
         <h2>Trainings and Continued Education</h2>
@@ -137,6 +211,70 @@
         <p>
             I currently teach yoga with <a href="https://www.neptunefitness.com" target="_blank" style="color: #666; text-decoration: none; border-bottom: 1px solid #ccc;">Neptune Fitness</a> to residents at various apartment complexes throughout Boston.
         </p>
+        </div>
+
+        <div id="services" class="tab-content">
+            <h1>services</h1>
+            
+            <p>
+                Whether you're looking for personalized one-on-one instruction or the energy of a group practice, I offer sessions tailored to your needs. Reach out to discuss what works best for you.
+            </p>
+
+            <h2>What I Offer</h2>
+            <ul class="training-list">
+                <li class="training-item">
+                    <span class="training-name">Private Yoga Lessons</span>
+                    <span class="training-details">Personalized sessions designed for your unique body, goals, and pace</span>
+                </li>
+                <li class="training-item">
+                    <span class="training-name">Group Yoga Lessons</span>
+                    <span class="training-details">Community practice for building connection and shared energy</span>
+                </li>
+                <li class="training-item">
+                    <span class="training-name">Body Scan Meditation Guidance</span>
+                    <span class="training-details">Guided meditation to cultivate presence and awareness in your body</span>
+                </li>
+            </ul>
+
+            <div style="margin-top: 2rem;">
+                <p style="font-size: 1.1rem;">
+                    Interested in working together? <a href="mailto:bitesoftheuniverse@gmail.com" style="color: #333; text-decoration: none; border-bottom: 1px solid #333;">Get in touch</a>
+                </p>
+            </div>
+        </div>
+
+        <h2>Services</h2>
+        <ul class="training-list">
+            <li class="training-item">
+                <span class="training-name">Private Yoga Lessons</span>
+            </li>
+            <li class="training-item">
+                <span class="training-name">Group Yoga Lessons</span>
+            </li>
+            <li class="training-item">
+                <span class="training-name">Body Scan Meditation Guidance</span>
+            </li>
+        </ul>
     </div>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all nav links and tab contents
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked nav link
+                this.classList.add('active');
+                
+                // Show corresponding tab content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
